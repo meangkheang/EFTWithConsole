@@ -1,5 +1,8 @@
 ﻿using ConnectDB.AppContexts;
+using ConnectDB.Controllers;
 using ConnectDB.Models;
 
-// new to add every context in this program file when add migration.
-//BloggingContext ctx =new BloggingContext();
+BlogController _blogController = new BlogController();
+
+
+_blogController.AddBlog(new Blog() { Url="http://localhost:8000"});
